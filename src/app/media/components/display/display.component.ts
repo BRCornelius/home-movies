@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-display',
+  selector: 'media-display',
   templateUrl: './display.component.html',
   styleUrls: ['./display.component.css']
 })
-export class DisplayComponent implements OnInit {
+export class DisplayComponent {
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
+  @Input() activeVideoUrl: string;
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IVideo } from '../../models';
+import { VideosService } from '../../services';
 
 @Component({
   selector: 'app-movies',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoviesPage implements OnInit {
 
-  constructor() { }
+  constructor(public vids: VideosService) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
+  activeVideo: IVideo = this.vids.activeVideo;
+  allVideos: IVideo[] = this.vids.allVideos;
+  filteredResults: IVideo[] = this.vids.filteredVideos;
 }
