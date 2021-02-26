@@ -1,5 +1,7 @@
-<div class="button-container" (click)="clickFunction()">
-  <h3>{{buttonText}}</h3>
+<div class="button-container">
+  <div class="button" (click)="clickFunction()">
+    <h3>{{buttonText}}</h3>
+  </div>
   <div *ngIf="open" class="filter-tray">
     <ng-content></ng-content>
   </div>

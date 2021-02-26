@@ -2,3 +2,9 @@
     width: 100%;
     background-color: blue;
 }
+.button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+h3 { color: white }
