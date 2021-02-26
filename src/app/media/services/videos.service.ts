@@ -29,27 +29,23 @@ export class VideosService {
     };
     return false;
   }
-  filterVideos: Function = (allVideos, criteriaKey, criteriaValue) => {
-    let result = [];
-    allVideos.reduce((agg, curr) => {
-      if(!this.hasDuplicate(agg, curr) && curr[criteriaKey] === criteriaValue) {
-        agg.push(curr);
-      };
-      return agg;
-    }, result)
-  }
-  multiFilterVideos: Function = (allVideos, criterionArray): IVideo[] => {
+  filterVideos: Function = (criteriaKey, criteriaValue): IVideo[] => this.allVideos.filter(video => video[criteriaKey] === criteriaValue)
+  multiFilterVideos: Function = (): IVideo[] => {
+    const allVideos = this.allVideos;
+    const criteriaObject = this.filterCriteria;
+    const criteriaKeys = Object.keys(this.filterCriteria);
     let results = [];
-    criterionArray.forEach(criteria => {
-      const key = Object.keys(criteria)[0];
-      const value = criteria[key];
-      const filteredResults = this.filterVideos(allVideos, key, value);
-      if(results.length === 0) {
-        results = filteredResults;
-      } else {
-        results.concat(filteredResults);
-      };
-    });
+    criteriaKeys.forEach(key => {
+      const selections = criteriaObject[key]
+      selections.forEach(selection => {
+        const goodVideos = this.filterVideos(key,selection)
+        if(results.length === 0){
+          results = goodVideos
+        } else {
+          goodVideos.forEach(video => results.push(video))
+        }
+      })
+    })
     return results;
   }
   updateFilterCriteria: Function = (key, value): void => {
@@ -63,5 +59,9 @@ export class VideosService {
         }
       }
     }
+  }
+  updateFilteredVideosList: Function = () => {
+    this.filteredVideos = this.multiFilterVideos();
+    console.log(this.filteredVideos)
   }
 }

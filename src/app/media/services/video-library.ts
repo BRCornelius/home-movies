@@ -8,7 +8,7 @@ export default [{
     thumbnailUrl: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/thumbnails/beach.jpg",
 }, {
     title: "Playing at the beach",
-    year: "unknown",
+    year: "90",
     keywords: ["key", "word"],
     stars: ["Tim", "Emily", "Gloria"],
     location: "beach",
@@ -16,7 +16,7 @@ export default [{
     thumbnailUrl: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/thumbnails/beach_1.jpg",
 }, {
     title: "Playing at the pool",
-    year: "unknown",
+    year: "91",
     keywords: ["key", "word"],
     stars: ["Tim", "Emily", "Brian", "Gloria"],
     location: "beach",
