@@ -1,9 +1,13 @@
 img {
     width: 25%;
 }
+h3 {
+    margin-left: 0.25rem;
+}
 .container {
     border: 1px solid black;
     display: flex;
+    align-items: center;
     justify-content: flex-start;
     margin: 0.25rem 0;
     width: 100%;
