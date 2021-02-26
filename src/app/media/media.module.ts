@@ -6,9 +6,10 @@ import { MoviesPage } from './page/movies/movies.page';
 import { GridComponent } from './components/grid/grid.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
+import { FilterComponent } from './components/filter/filter.component';
 
 @NgModule({
-  declarations: [DisplayComponent, MediaCardComponent, MoviesPage, GridComponent],
+  declarations: [DisplayComponent, MediaCardComponent, MoviesPage, GridComponent, FilterComponent],
   imports: [
     CommonModule,
     MatGridListModule,
