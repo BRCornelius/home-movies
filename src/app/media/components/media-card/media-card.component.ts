@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-media-card',
+  selector: 'media-card',
   templateUrl: './media-card.component.html',
   styleUrls: ['./media-card.component.css']
 })
-export class MediaCardComponent implements OnInit {
+export class MediaCardComponent {
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
+  @Input() title: string;
+  @Input() thumbnailUrl: string;
 }

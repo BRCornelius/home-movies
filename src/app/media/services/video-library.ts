@@ -1,8 +1,25 @@
 export default [{
-    title: "Title of the Video",
+    title: "Video 1 With a long title",
     year: "1900",
     keywords: ["key", "word"],
     stars: ["1ABC", "2DEF"],
     location: "location",
-    url: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/beach.mp4"
+    url: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/beach.mp4",
+    thumbnailUrl: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/thumbnails/beach.jpg",
+}, {
+    title: "Video 2",
+    year: "1900",
+    keywords: ["key", "word"],
+    stars: ["1ABC", "2DEF"],
+    location: "location",
+    url: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/beach.mp4",
+    thumbnailUrl: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/thumbnails/beach.jpg",
+}, {
+    title: "Video 3 also with a long title",
+    year: "1900",
+    keywords: ["key", "word"],
+    stars: ["1ABC", "2DEF"],
+    location: "location",
+    url: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/beach.mp4",
+    thumbnailUrl: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/thumbnails/beach.jpg",
 }]

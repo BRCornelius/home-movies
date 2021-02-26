@@ -4,5 +4,6 @@ export interface IVideo {
     keywords: string[];
     stars: string[];
     location: string;
+    thumbnailUrl: string;
     url: string;
 }

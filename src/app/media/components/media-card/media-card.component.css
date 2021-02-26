@@ -1,0 +1,10 @@
+img {
+    width: 25%;
+}
+.container {
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.25rem 0;
+    width: 100%;
+}
