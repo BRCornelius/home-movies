@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { IVideo } from '../models';
+import { IFilterOptions, IVideo } from '../models';
 import data from './video-library';
 
 @Injectable({
@@ -13,6 +13,12 @@ export class VideosService {
   activeVideo: IVideo = data[0];
   allVideos: IVideo[] = data;
   filteredVideos: IVideo[];
+
+  filterCriteria: IFilterOptions = {
+    year: [],
+    location: [],
+    stars: []
+  }
 
   clickVideo: Function = video => this.activeVideo = video;
   hasDuplicate: Function = (array, value) => {
@@ -32,7 +38,7 @@ export class VideosService {
       return agg;
     }, result)
   }
-  multiFilterVideos: Function = (allVideos, criterionArray) => {
+  multiFilterVideos: Function = (allVideos, criterionArray): IVideo[] => {
     let results = [];
     criterionArray.forEach(criteria => {
       const key = Object.keys(criteria)[0];
@@ -45,5 +51,17 @@ export class VideosService {
       };
     });
     return results;
+  }
+  updateFilterCriteria: Function = (key, value): void => {
+    const choices = this.filterCriteria[key]
+    if(!choices.includes(value)) {
+      choices.push(value);
+    } else {
+      for(let i = 0; i < choices.length; i++) {
+        if(choices[i] === value) {
+          choices.splice(i, 1);
+        }
+      }
+    }
   }
 }

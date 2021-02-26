@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { VideosService } from '../../services';
 
 @Component({
   selector: 'app-filter-options',
   templateUrl: './filter-options.component.html',
   styleUrls: ['./filter-options.component.css']
 })
-export class FilterOptionsComponent implements OnInit {
+export class FilterOptionsComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  constructor(public vids: VideosService) { }
 
 }
