@@ -8,5 +8,6 @@ import { Component, Input } from '@angular/core';
 export class GridComponent {
 
   constructor() { }
+  @Input() clickFunction: Function;
   @Input() items: any[];
 }

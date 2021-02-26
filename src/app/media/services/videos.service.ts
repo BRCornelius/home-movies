@@ -14,5 +14,5 @@ export class VideosService {
   allVideos: IVideo[] = data;
   filteredVideos: IVideo[];
 
-  clickVideo: Function = $event => console.log($event.target)
+  clickVideo: Function = video => this.activeVideo = video;
 }

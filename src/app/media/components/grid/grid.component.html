@@ -1,5 +1,9 @@
 
 <div class="container">
-  <media-card *ngFor="let item of items" [title]="item.title" [thumbnailUrl]="item.thumbnailUrl"></media-card>
+  <media-card
+    *ngFor="let item of items"
+    (click)="clickFunction(item)"
+    [title]="item.title"
+    [thumbnailUrl]="item.thumbnailUrl"></media-card>
 </div>
 
