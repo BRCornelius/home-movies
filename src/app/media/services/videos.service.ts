@@ -12,7 +12,7 @@ export class VideosService {
 
   activeVideo: IVideo = data[0];
   allVideos: IVideo[] = data;
-  filteredVideos: IVideo[];
+  filteredVideos: IVideo[] = this.allVideos;
 
   filterCriteria: IFilterOptions = {
     year: [],
@@ -48,6 +48,7 @@ export class VideosService {
     })
     return results;
   }
+  resetVideosList: Function = () => this.filteredVideos = this.allVideos;
   updateFilterCriteria: Function = (key, value): void => {
     const choices = this.filterCriteria[key]
     if(!choices.includes(value)) {
