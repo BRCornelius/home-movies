@@ -9,5 +9,4 @@ import { VideosService } from '../../services';
 export class FilterOptionsComponent {
 
   constructor(public vids: VideosService) { }
-
 }

@@ -30,21 +30,18 @@ export class VideosService {
     return false;
   }
   filterVideos: Function = (criteriaKey, criteriaValue): IVideo[] => this.allVideos.filter(video => video[criteriaKey] === criteriaValue)
-  multiFilterVideos: Function = (): IVideo[] => {
+  multiFilterVideos: Function = (key): IVideo[] => {
     const allVideos = this.allVideos;
     const criteriaObject = this.filterCriteria;
-    const criteriaKeys = Object.keys(this.filterCriteria);
     let results = [];
-    criteriaKeys.forEach(key => {
-      const selections = criteriaObject[key]
-      selections.forEach(selection => {
-        const goodVideos = this.filterVideos(key,selection)
-        if(results.length === 0){
-          results = goodVideos
-        } else {
-          goodVideos.forEach(video => results.push(video))
-        }
-      })
+    const selections = criteriaObject[key]
+    selections.forEach(selection => {
+      const goodVideos = this.filterVideos(key,selection)
+      if(results.length === 0){
+        results = goodVideos
+      } else {
+        goodVideos.forEach(video => results.push(video))
+      }
     })
     return results;
   }
@@ -62,7 +59,7 @@ export class VideosService {
     }
   }
   updateFilteredVideosList: Function = () => {
-    this.filteredVideos = this.multiFilterVideos();
+    this.filteredVideos = this.multiFilterVideos('year');
     console.log(this.filteredVideos)
   }
 }
