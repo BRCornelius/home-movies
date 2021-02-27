@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { VideosService } from '../../services';
 
 @Component({
   selector: 'year-options',
@@ -6,5 +7,5 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./year-options.component.css']
 })
 export class YearOptionsComponent{
-  constructor() { }
+  constructor(public vids: VideosService) { }
 }

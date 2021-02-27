@@ -60,6 +60,5 @@ export class VideosService {
   }
   updateFilteredVideosList: Function = () => {
     this.filteredVideos = this.multiFilterVideos('year');
-    console.log(this.filteredVideos)
   }
 }
