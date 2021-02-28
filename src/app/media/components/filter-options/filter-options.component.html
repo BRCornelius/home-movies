@@ -1,13 +1,14 @@
 <div class="button-container">
-  <button (click)="vids.updateFilteredVideosList()">Update</button>
+  <button (click)="vids.updateFilteredVideosList(option)">Update</button>
   <button (click)="vids.resetVideosList()">All Movies</button>
 </div>
 <div class="select-container">
   <label for="filter">Filter By: </label>
-  <select name="filter" id="filter" (click)="updateOption($event)">
+  <select class="form-control" name="filter" id="filter" (change)="updateOption($event)">
     <option value="year">Year</option>
-    <!-- <option value="location">Location</option>
-    <option value="star">Star</option> -->
+    <!-- <option value="location">Location</option> -->
+    <option value="star">Star</option>
   </select>
 </div>
 <year-options *ngIf="option === 'year'"></year-options>
+<name-options *ngIf="option === 'star'"></name-options>

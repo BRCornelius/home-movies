@@ -2,7 +2,7 @@ export interface IVideo {
     title: string;
     year: string;
     keywords: string[];
-    stars: string[];
+    star: string[];
     location: string;
     thumbnailUrl: string;
     url: string;

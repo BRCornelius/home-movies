@@ -17,7 +17,7 @@ export class VideosService {
   filterCriteria: IFilterOptions = {
     year: [],
     location: [],
-    stars: []
+    star: []
   }
 
   clickVideo: Function = video => this.activeVideo = video;
@@ -30,13 +30,24 @@ export class VideosService {
     return false;
   }
   filterVideos: Function = (criteriaKey, criteriaValue): IVideo[] => this.allVideos.filter(video => video[criteriaKey] === criteriaValue)
+  filterVideosFromArray: Function = (criteriaKey, criteriaValue): IVideo[] => this.allVideos.filter(video => video[criteriaKey].includes(criteriaValue))
   multiFilterVideos: Function = (key): IVideo[] => {
     const allVideos = this.allVideos;
     const criteriaObject = this.filterCriteria;
     let results = [];
     const selections = criteriaObject[key]
     selections.forEach(selection => {
-      const goodVideos = this.filterVideos(key,selection)
+      let goodVideos;
+      switch(key){
+        case "year":
+          goodVideos = this.filterVideos(key,selection)
+          break;
+        case "star":
+          goodVideos = this.filterVideosFromArray(key,selection)
+          break;
+        default:
+          goodVideos = allVideos
+      }
       if(results.length === 0){
         results = goodVideos
       } else {
@@ -58,7 +69,5 @@ export class VideosService {
       }
     }
   }
-  updateFilteredVideosList: Function = () => {
-    this.filteredVideos = this.multiFilterVideos('year');
-  }
+  updateFilteredVideosList: Function = (key) => this.filteredVideos = this.multiFilterVideos(key);
 }

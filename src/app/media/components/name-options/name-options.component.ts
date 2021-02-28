@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { VideosService } from '../../services';
 
 @Component({
-  selector: 'app-name-options',
+  selector: 'name-options',
   templateUrl: './name-options.component.html',
   styleUrls: ['./name-options.component.css']
 })
-export class NameOptionsComponent implements OnInit {
+export class NameOptionsComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  constructor(public vids: VideosService) { }
 
 }
