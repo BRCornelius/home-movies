@@ -1,7 +1,7 @@
 export default [{
     title: "The family at the beach",
     year: "unknown",
-    keywords: ["key", "word"],
+    keywords: [],
     star: ["tim", "emily", "brian", "gloria"],
     location: "beach",
     url: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/beach.mp4",
@@ -9,7 +9,7 @@ export default [{
 }, {
     title: "Playing at the beach",
     year: "unknown",
-    keywords: ["key", "word"],
+    keywords: [],
     star: ["tim", "emily", "gloria"],
     location: "beach",
     url: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/beach_1.mp4",
@@ -17,7 +17,7 @@ export default [{
 }, {
     title: "Playing at the pool",
     year: "unknown",
-    keywords: ["key", "word"],
+    keywords: [],
     star: ["tim", "emily", "brian", "gloria"],
     location: "beach",
     url: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/beach_2.mp4",
@@ -25,7 +25,7 @@ export default [{
 }, {
     title: "Sledding in Arkansas",
     year: "unknown",
-    keywords: ["key", "word"],
+    keywords: [],
     star: ["tim", "emily", "brian", "gloria", "glenda", "garrett", "berta", "celyna", "ray"],
     location: "arkansas",
     url: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/arkansas-sledding.mp4",
@@ -33,7 +33,7 @@ export default [{
 }, {
     title: "Church Kid's Concert",
     year: "unknown",
-    keywords: ["key", "word"],
+    keywords: [],
     star: ["tim", "emily", "brian"],
     location: "church",
     url: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/church.mp4",
@@ -41,7 +41,7 @@ export default [{
 }, {
     title: "Emily's Graduation",
     year: "unknown",
-    keywords: ["key", "word"],
+    keywords: [],
     star: ["emily"],
     location: "school",
     url: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/emily-graduation.mp4",
@@ -49,7 +49,7 @@ export default [{
 }, {
     title: "Holidays",
     year: "unknown",
-    keywords: ["key", "word"],
+    keywords: [],
     star: ["tim", "emily", "brian", "ray", "gloria"],
     location: "home",
     url: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/halloween.mp4",

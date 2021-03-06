@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { IFilterOptions, IVideo } from '../models';
-import data from './video-library';
-
+import {data} from './library';
 @Injectable({
   providedIn: 'root'
 })
@@ -10,8 +9,8 @@ export class VideosService {
 
   constructor() { }
 
-  activeVideo: IVideo = data[0];
-  allVideos: IVideo[] = data;
+  allVideos: IVideo[] = data[0].default;
+  activeVideo: IVideo = this.allVideos[0];
   filteredVideos: IVideo[] = this.allVideos;
 
   filterCriteria: IFilterOptions = {
