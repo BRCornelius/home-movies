@@ -1,4 +1,6 @@
-import * as unknownVideos from './unknown';
-import * as fifties from './fifties';
+import unknownVideos from './unknown';
+import fifties from './fifties';
 
-export const data = [unknownVideos, fifties].reduce((agg, curr) => agg.concat(curr), []);
+const conjoinArrays = (arrayOfArrays) => arrayOfArrays.flat();
+
+export const data = conjoinArrays([unknownVideos, fifties])

@@ -9,7 +9,7 @@ export class VideosService {
 
   constructor() { }
 
-  allVideos: IVideo[] = data[0].default;
+  allVideos: IVideo[] = data;
   activeVideo: IVideo = this.allVideos[0];
   filteredVideos: IVideo[] = this.allVideos;
 
