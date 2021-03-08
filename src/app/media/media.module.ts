@@ -10,9 +10,10 @@ import { FilterComponent } from './components/filter/filter.component';
 import { FilterOptionsComponent } from './components/filter-options/filter-options.component';
 import { YearOptionsComponent } from './components/year-options/year-options.component';
 import { NameOptionsComponent } from './components/name-options/name-options.component';
+import { VideoCountComponent } from './components/video-count/video-count.component';
 
 @NgModule({
-  declarations: [DisplayComponent, MediaCardComponent, MoviesPage, GridComponent, FilterComponent, FilterOptionsComponent, YearOptionsComponent, NameOptionsComponent],
+  declarations: [DisplayComponent, MediaCardComponent, MoviesPage, GridComponent, FilterComponent, FilterOptionsComponent, YearOptionsComponent, NameOptionsComponent, VideoCountComponent],
   imports: [
     CommonModule,
     MatGridListModule,

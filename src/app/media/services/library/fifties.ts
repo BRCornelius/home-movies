@@ -112,4 +112,12 @@ export default [{
     location: "",
     url: `${assetsPath}/58/storyland-58.mp4`,
     thumbnailUrl: `${assetsPath}/58/thumbnails/storyland-58.jpg`,
+}, {
+    title: "Madrid",
+    year: "59",
+    keywords: [],
+    star: [],
+    location: "",
+    url: `${assetsPath}/59/madrid-january-59.mp4`,
+    thumbnailUrl: `${assetsPath}/59/thumbnails/madrid-january-59.jpg`,
 }]
