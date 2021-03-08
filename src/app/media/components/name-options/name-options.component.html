@@ -45,6 +45,12 @@
   <mat-grid-tile class="option-container">
     <input
       type="checkbox"
+      (click)="vids.updateFilterCriteria('star', 'gary')"/>
+    <p>Gary</p>
+  </mat-grid-tile>
+  <mat-grid-tile class="option-container">
+    <input
+      type="checkbox"
       (click)="vids.updateFilterCriteria('star', 'glenda')"/>
     <p>Glenda</p>
   </mat-grid-tile>
@@ -75,7 +81,25 @@
   <mat-grid-tile class="option-container">
     <input
       type="checkbox"
+      (click)="vids.updateFilterCriteria('star', 'clarice')"/>
+    <p>Clarice</p>
+  </mat-grid-tile>
+  <mat-grid-tile class="option-container">
+    <input
+      type="checkbox"
+      (click)="vids.updateFilterCriteria('star', 'molly')"/>
+    <p>Molly</p>
+  </mat-grid-tile>
+  <mat-grid-tile class="option-container">
+    <input
+      type="checkbox"
+      (click)="vids.updateFilterCriteria('star', 'megan')"/>
+    <p>Megan</p>
+  </mat-grid-tile>
+  <!-- <mat-grid-tile class="option-container">
+    <input
+      type="checkbox"
       (click)="vids.updateFilterCriteria('star', 'calvin')"/>
     <p>Poppy Dyke</p>
-  </mat-grid-tile>
+  </mat-grid-tile> -->
 </mat-grid-list>
