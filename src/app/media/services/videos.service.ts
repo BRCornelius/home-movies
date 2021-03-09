@@ -19,7 +19,11 @@ export class VideosService {
     star: []
   };
 
-  clickVideo: Function = video => this.activeVideo = video;
+  clickVideo: Function = video => {
+    this.activeVideo = video;
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }
   hasDuplicate: Function = (array, value) => {
     for ( let i = 0; i < array.length; i++) {
       if (array[i].title === value.title && array[i].num === value.num) {
