@@ -3,7 +3,7 @@ export default [{
     year: "unknown",
     keywords: [],
     star: ["tim", "emily", "brian", "gloria"],
-    location: "beach",
+    location: ["beach"],
     url: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/beach.mp4",
     thumbnailUrl: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/thumbnails/beach.jpg",
 }, {
@@ -11,7 +11,7 @@ export default [{
     year: "unknown",
     keywords: [],
     star: ["tim", "emily", "gloria"],
-    location: "beach",
+    location: ["beach"],
     url: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/beach_1.mp4",
     thumbnailUrl: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/thumbnails/beach_1.jpg",
 }, {
@@ -19,7 +19,7 @@ export default [{
     year: "unknown",
     keywords: [],
     star: ["tim", "emily", "brian", "gloria"],
-    location: "beach",
+    location: ["beach"],
     url: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/beach_2.mp4",
     thumbnailUrl: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/thumbnails/beach_2.jpg",
 }, {
@@ -27,7 +27,7 @@ export default [{
     year: "unknown",
     keywords: [],
     star: ["tim", "emily", "brian", "gloria", "glenda", "garrett", "berta", "celyna", "ray"],
-    location: "arkansas",
+    location: ["arkansas"],
     url: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/arkansas-sledding.mp4",
     thumbnailUrl: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/thumbnails/arkansas-sledding.jpg",
 }, {
@@ -35,7 +35,7 @@ export default [{
     year: "unknown",
     keywords: [],
     star: ["tim", "emily", "brian"],
-    location: "church",
+    location: ["church"],
     url: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/church.mp4",
     thumbnailUrl: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/thumbnails/church.jpg",
 }, {
@@ -43,7 +43,7 @@ export default [{
     year: "unknown",
     keywords: [],
     star: ["emily"],
-    location: "school",
+    location: ["school"],
     url: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/emily-graduation.mp4",
     thumbnailUrl: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/thumbnails/emily-graduation.jpg",
 }, {
@@ -51,7 +51,7 @@ export default [{
     year: "unknown",
     keywords: [],
     star: ["tim", "emily", "brian", "ray", "gloria"],
-    location: "home",
+    location: [],
     url: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/halloween.mp4",
     thumbnailUrl: "https://assets.corneliuses.com/videos/family/Home-movies/unknown/thumbnails/halloween.jpg",
 }]
