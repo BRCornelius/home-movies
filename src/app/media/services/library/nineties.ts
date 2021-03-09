@@ -59,4 +59,28 @@ export default [{
     location: ['arkansas'],
     url: `${assetsPath}/90/arkansas-christmas-90.mp4`,
     thumbnailUrl: `${assetsPath}/90/thumbnails/arkansas-christmas-90.jpg`,
+}, {
+    title: 'Tim\'s Birthday',
+    year: '91',
+    keywords: [],
+    star: ['brian', 'tim', 'emily', 'gloria'],
+    location: ['orleans', 'york'],
+    url: `${assetsPath}/91/tim-birthday-91.mp4`,
+    thumbnailUrl: `${assetsPath}/91/thumbnails/tim-birthday-91.jpg`,
+}, {
+    title: 'Dance Recital',
+    year: '91',
+    keywords: [],
+    star: ['emily', 'tim'],
+    location: ['orleans'],
+    url: `${assetsPath}/91/emily-dance-91.mp4`,
+    thumbnailUrl: `${assetsPath}/91/thumbnails/emily-dance-91.jpg`,
+}, {
+    title: 'Dancing',
+    year: '91',
+    keywords: [],
+    star: ['gloria', 'brian', 'emily','tim'],
+    location: ['orleans', 'york'],
+    url: `${assetsPath}/91/dancing-91.mp4`,
+    thumbnailUrl: `${assetsPath}/91/thumbnails/dancing-91.jpg`,
 }]
