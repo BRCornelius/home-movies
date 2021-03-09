@@ -6,6 +6,6 @@ import { VideosService } from '../../services';
   templateUrl: './year-options.component.html',
   styleUrls: ['./year-options.component.css']
 })
-export class YearOptionsComponent{
+export class YearOptionsComponent {
   constructor(public vids: VideosService) { }
 }

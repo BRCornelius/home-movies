@@ -4,4 +4,4 @@ import eighties from './eighties';
 
 const conjoinArrays = (arrayOfArrays) => arrayOfArrays.flat();
 
-export const data = conjoinArrays([unknownVideos, fifties, eighties])
+export const data = conjoinArrays([unknownVideos, fifties, eighties]);

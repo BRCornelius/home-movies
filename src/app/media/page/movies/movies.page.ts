@@ -11,9 +11,9 @@ export class MoviesPage implements OnInit {
 
   constructor(public vids: VideosService) { }
 
-  ngOnInit() {}
-
   activeVideo: IVideo = this.vids.activeVideo;
   allVideos: IVideo[] = this.vids.allVideos;
   filteredResults: IVideo[] = this.vids.filteredVideos;
+
+  ngOnInit() {}
 }

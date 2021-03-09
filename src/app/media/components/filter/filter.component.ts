@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class FilterComponent {
 
   constructor() { }
-  open: boolean = false;
-  buttonText: string = this.open ? "Close" : "Filter";
+  open = false;
+  buttonText: string = this.open ? 'Close' : 'Filter';
   clickFunction: Function = (): void => {
-    this.open = !this.open
-    this.buttonText = this.open ? "Close" : "Filter";
-  };
+    this.open = !this.open;
+    this.buttonText = this.open ? 'Close' : 'Filter';
+  }
 }

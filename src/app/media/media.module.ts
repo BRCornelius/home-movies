@@ -13,7 +13,11 @@ import { NameOptionsComponent } from './components/name-options/name-options.com
 import { VideoCountComponent } from './components/video-count/video-count.component';
 
 @NgModule({
-  declarations: [DisplayComponent, MediaCardComponent, MoviesPage, GridComponent, FilterComponent, FilterOptionsComponent, YearOptionsComponent, NameOptionsComponent, VideoCountComponent],
+  declarations: [
+    DisplayComponent, MediaCardComponent, MoviesPage,
+    GridComponent, FilterComponent, FilterOptionsComponent,
+    YearOptionsComponent, NameOptionsComponent, VideoCountComponent
+  ],
   imports: [
     CommonModule,
     MatGridListModule,

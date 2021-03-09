@@ -9,6 +9,6 @@ import { VideosService } from '../../services';
 export class FilterOptionsComponent {
 
   constructor(public vids: VideosService) { }
-  option: string = "year";
-  updateOption: Function = $event => this.option = $event.target.value
+  option = 'year';
+  updateOption: Function = $event => this.option = $event.target.value;
 }

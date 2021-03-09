@@ -17,52 +17,54 @@ export class VideosService {
     year: [],
     location: [],
     star: []
-  }
+  };
 
   clickVideo: Function = video => this.activeVideo = video;
   hasDuplicate: Function = (array, value) => {
-    for( let i=0; i<array.length; i++) {
-      if(array[i].title === value.title && array[i].num === value.num) {
+    for ( let i = 0; i < array.length; i++) {
+      if (array[i].title === value.title && array[i].num === value.num) {
         return true;
-      };
-    };
+      }
+    }
     return false;
   }
-  filterVideos: Function = (criteriaKey, criteriaValue): IVideo[] => this.allVideos.filter(video => video[criteriaKey] === criteriaValue)
-  filterVideosFromArray: Function = (criteriaKey, criteriaValue): IVideo[] => this.allVideos.filter(video => video[criteriaKey].includes(criteriaValue))
+  filterVideos: Function = (criteriaKey, criteriaValue): IVideo[] =>
+    this.allVideos.filter(video => video[criteriaKey] === criteriaValue)
+  filterVideosFromArray: Function = (criteriaKey, criteriaValue): IVideo[] =>
+    this.allVideos.filter(video => video[criteriaKey].includes(criteriaValue))
   multiFilterVideos: Function = (key): IVideo[] => {
     const allVideos = this.allVideos;
     const criteriaObject = this.filterCriteria;
     let results = [];
-    const selections = criteriaObject[key]
+    const selections = criteriaObject[key];
     selections.forEach(selection => {
       let goodVideos;
-      switch(key){
-        case "year":
-          goodVideos = this.filterVideos(key,selection)
+      switch (key) {
+        case 'year':
+          goodVideos = this.filterVideos(key, selection);
           break;
-        case "star":
-          goodVideos = this.filterVideosFromArray(key,selection)
+        case 'star':
+          goodVideos = this.filterVideosFromArray(key, selection);
           break;
         default:
-          goodVideos = allVideos
+          goodVideos = allVideos;
       }
-      if(results.length === 0){
-        results = goodVideos
+      if (results.length === 0) {
+        results = goodVideos;
       } else {
-        goodVideos.forEach(video => results.push(video))
+        goodVideos.forEach(video => results.push(video));
       }
-    })
+    });
     return results;
   }
   resetVideosList: Function = () => this.filteredVideos = this.allVideos;
   updateFilterCriteria: Function = (key, value): void => {
-    const choices = this.filterCriteria[key]
-    if(!choices.includes(value)) {
+    const choices = this.filterCriteria[key];
+    if (!choices.includes(value)) {
       choices.push(value);
     } else {
-      for(let i = 0; i < choices.length; i++) {
-        if(choices[i] === value) {
+      for (let i = 0; i < choices.length; i++) {
+        if (choices[i] === value) {
           choices.splice(i, 1);
         }
       }

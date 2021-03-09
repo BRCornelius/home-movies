@@ -6,7 +6,7 @@ import { VideosService } from '../../services';
   templateUrl: './video-count.component.html',
   styleUrls: ['./video-count.component.css']
 })
-export class VideoCountComponent{
+export class VideoCountComponent {
 
   constructor(public vids: VideosService) { }
 
