@@ -4,7 +4,7 @@ export default [{
     title: 'Disney',
     year: '87',
     keywords: [],
-    star: ['gloria', 'brian', 'emily'],
+    star: ['gloria', 'brian', 'emily', 'tim'],
     location: ['disney'],
     url: `${assetsPath}/87/disney-87.mp4`,
     thumbnailUrl: `${assetsPath}/87/thumbnails/disney-87.jpg`,
@@ -12,7 +12,7 @@ export default [{
     title: 'Emily\'s Birth',
     year: '87',
     keywords: [],
-    star: ['gloria', 'brian', 'emily'],
+    star: ['gloria', 'brian', 'emily', 'tim'],
     location: ['orleans'],
     url: `${assetsPath}/87/emily-birth-87.mp4`,
     thumbnailUrl: `${assetsPath}/87/thumbnails/emily-birth-87.jpg`,
@@ -21,7 +21,7 @@ export default [{
     year: '89',
     keywords: [],
     star: [
-        'gloria', 'brian', 'emily', 'jean', 'gary',
+        'gloria', 'brian', 'emily', 'jean', 'gary', 'tim',
         'berta', 'garrett', 'glenda', 'megan', 'jane',
         'celeste', 'celyna', 'clarice', 'molly'
     ],
@@ -33,7 +33,7 @@ export default [{
     year: '89',
     keywords: [],
     star: [
-        'gloria', 'brian', 'emily', 'jean', 'gary',
+        'gloria', 'brian', 'emily', 'jean', 'gary', 'tim',
         'berta', 'garrett', 'glenda', 'ray', 'celyna'
     ],
     location: ['arkansas'],
@@ -44,7 +44,7 @@ export default [{
     year: '89',
     keywords: [],
     star: [
-        'gloria', 'brian', 'emily', 'jean', 'molly',
+        'gloria', 'brian', 'emily', 'jean', 'molly', 'tim',
         'megan', 'clarice', 'ray', 'celyna', 'celeste'
     ],
     location: ['arkansas', 'orleans'],
