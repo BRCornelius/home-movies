@@ -1,0 +1,18 @@
+.container {
+    background-color: darkslategrey;
+    display: flex;
+    justify-content: center;
+}
+.contents {
+    display: flex;
+    padding: 0.5rem 2.5rem;
+    flex-direction: column;
+    text-align: center;
+}
+p {
+    color: white;
+    margin: 0;
+}
+a {
+    color: lightblue;
+}

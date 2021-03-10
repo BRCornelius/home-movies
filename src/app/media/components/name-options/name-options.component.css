@@ -4,6 +4,11 @@ h2 {
     color: white;
 }
 .option-container {
-    display: inline-flex;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title-container {
+    display: flex;
+    justify-content: center;
 }
