@@ -3,7 +3,7 @@ export interface IVideo {
     year: string;
     keywords: string[];
     star: string[];
-    location: string;
+    location: string[];
     thumbnailUrl: string;
     url: string;
 }
