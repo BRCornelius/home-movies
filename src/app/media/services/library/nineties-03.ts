@@ -1,4 +1,7 @@
-import { assetsPath, brian, emily, gloria, kidsMom, tim } from "./constants";
+import {
+    allFam, assetsPath, brian, emily, gloria,
+    jean, kidsMom, mainKids, sigs, tim
+} from "./constants";
 
 export default [{
     title: 'Figment Ride',
@@ -86,10 +89,11 @@ export default [{
     keywords: [],
     star: kidsMom,
     location: ['orleans'],
-    url: `${assetsPath}/95/universal-95.mp4`,
-    thumbnailUrl: `${assetsPath}/95/thumbnails/universal-95.jpg`,
+    url: `${assetsPath}/95/tim-birthday-95.mp4`,
+    thumbnailUrl: `${assetsPath}/95/thumbnails/tim-birthday-95.jpg`,
 }, {
     title: 'Softball',
+    year: '95',
     keywords: [],
     star: [emily],
     location: ['orleans'],
@@ -97,6 +101,7 @@ export default [{
     thumbnailUrl: `${assetsPath}/95/thumbnails/softball-95.jpg`,
 }, {
     title: 'May Flood',
+    year: '95',
     keywords: [],
     star: [],
     location: ['orleans'],
@@ -104,6 +109,7 @@ export default [{
     thumbnailUrl: `${assetsPath}/95/thumbnails/mayflood-95.jpg`,
 }, {
     title: 'Ho Down',
+    year: '95',
     keywords: [],
     star: [brian],
     location: ['orleans'],
@@ -111,9 +117,82 @@ export default [{
     thumbnailUrl: `${assetsPath}/95/thumbnails/hodown-95.jpg`,
 }, {
     title: 'Graduation',
+    year: '95',
     keywords: [],
     star: [brian],
     location: ['orleans'],
     url: `${assetsPath}/95/graduation-95.mp4`,
     thumbnailUrl: `${assetsPath}/95/thumbnails/graduation-95.jpg`,
+}, {
+    title: 'Class Halloween',
+    year: '95',
+    keywords: [],
+    star: [emily],
+    location: ['orleans'],
+    url: `${assetsPath}/95/emily-halloween-95.mp4`,
+    thumbnailUrl: `${assetsPath}/95/thumbnails/emily-halloween-95.jpg`,
+}, {
+    title: 'Dance Recital',
+    year: '95',
+    keywords: [],
+    star: [emily],
+    location: ['orleans'],
+    url: `${assetsPath}/95/emily-dance-95.mp4`,
+    thumbnailUrl: `${assetsPath}/95/thumbnails/emily-dance-95.jpg`,
+}, {
+    title: 'Emily\'s Birthday',
+    year: '95',
+    keywords: [],
+    star: [emily],
+    location: ['orleans', 'miro'],
+    url: `${assetsPath}/95/emily-birthday-95.mp4`,
+    thumbnailUrl: `${assetsPath}/95/thumbnails/emily-birthday-95.jpg`,
+}, {
+    title: 'Easter',
+    year: '95',
+    keywords: [],
+    star: allFam,
+    location: ['orleans', 'miro'],
+    url: `${assetsPath}/95/easter-95.mp4`,
+    thumbnailUrl: `${assetsPath}/95/thumbnails/easter-95.jpg`,
+}, {
+    title: 'Christmas',
+    year: '95',
+    keywords: [],
+    star: mainKids,
+    location: ['orleans', 'miro'],
+    url: `${assetsPath}/95/christmas-95.mp4`,
+    thumbnailUrl: `${assetsPath}/95/thumbnails/christmas-95.jpg`,
+}, {
+    title: 'Brian\'s Birthday',
+    year: '95',
+    keywords: [],
+    star: [brian, tim],
+    location: ['orleans', 'miro'],
+    url: `${assetsPath}/95/birthday-brian-95.mp4`,
+    thumbnailUrl: `${assetsPath}/95/thumbnails/birthday-brian-95.jpg`,
+}, {
+    title: 'After the Beach',
+    year: '95',
+    keywords: [],
+    star: mainKids,
+    location: ['beach'],
+    url: `${assetsPath}/95/beach_02-95.mp4`,
+    thumbnailUrl: `${assetsPath}/95/thumbnails/beach_02-95.jpg`,
+}, {
+    title: 'At the Beach',
+    year: '95',
+    keywords: [],
+    star: kidsMom,
+    location: ['beach'],
+    url: `${assetsPath}/95/beach_01-95.mp4`,
+    thumbnailUrl: `${assetsPath}/95/thumbnails/beach_01-95.jpg`,
+}, {
+    title: 'Tim\'s Birthday',
+    year: '95',
+    keywords: [],
+    star: [...kidsMom, ...sigs, jean],
+    location: ['arkansas'],
+    url: `${assetsPath}/95/arkansas-new-years-95.mp4`,
+    thumbnailUrl: `${assetsPath}/95/thumbnails/arkansas-new-years-95.jpg`,
 }]
