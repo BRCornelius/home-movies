@@ -1,6 +1,6 @@
 import {
-    allFam, assetsPath, berta, celyna, emily,
-    garrett, glenda, gloria, kidsMom, mainKids, tim
+    allFam, ark, assetsPath, beach, berta, celyna, church, emily,
+    garrett, glenda, gloria, kidsMom, mainKids, newman, tim
 } from "./constants";
 
 export default [{
@@ -8,7 +8,7 @@ export default [{
     year: 'unknown',
     keywords: [],
     star: kidsMom,
-    location: ['beach'],
+    location: beach,
     url: `${assetsPath}/unknown/beach.mp4`,
     thumbnailUrl: `${assetsPath}/unknown/thumbnails/beach.jpg`,
 }, {
@@ -16,7 +16,7 @@ export default [{
     year: 'unknown',
     keywords: [],
     star: [tim, emily, gloria],
-    location: ['beach'],
+    location: beach,
     url: `${assetsPath}/unknown/beach_1.mp4`,
     thumbnailUrl: `${assetsPath}/unknown/thumbnails/beach_1.jpg`,
 }, {
@@ -24,7 +24,7 @@ export default [{
     year: 'unknown',
     keywords: [],
     star: kidsMom,
-    location: ['beach'],
+    location: beach,
     url: `${assetsPath}/unknown/beach_2.mp4`,
     thumbnailUrl: `${assetsPath}/unknown/thumbnails/beach_2.jpg`,
 }, {
@@ -32,7 +32,7 @@ export default [{
     year: 'unknown',
     keywords: [],
     star: [...allFam, glenda, garrett, berta, celyna],
-    location: ['arkansas'],
+    location: ark,
     url: `${assetsPath}/unknown/arkansas-sledding.mp4`,
     thumbnailUrl: `${assetsPath}/unknown/thumbnails/arkansas-sledding.jpg`,
 }, {
@@ -40,7 +40,7 @@ export default [{
     year: 'unknown',
     keywords: [],
     star: mainKids,
-    location: ['church'],
+    location: church,
     url: `${assetsPath}/unknown/church.mp4`,
     thumbnailUrl: `${assetsPath}/unknown/thumbnails/church.jpg`,
 }, {
@@ -48,7 +48,7 @@ export default [{
     year: 'unknown',
     keywords: [],
     star: [emily],
-    location: ['school'],
+    location: newman,
     url: `${assetsPath}/unknown/emily-graduation.mp4`,
     thumbnailUrl: `${assetsPath}/unknown/thumbnails/emily-graduation.jpg`,
 }, {

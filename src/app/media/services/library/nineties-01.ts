@@ -1,6 +1,7 @@
 import {
-    allFam, assetsPath, brian, celeste, celyna,
-    corns, emily, kidsMom, mainKids, megan, ray, tim
+    allFam, ark, assetsPath, beach, brian, celeste, celyna,
+    corns, emily, kidsMom, mainKids, megan, newman,
+    nO, ray, tim, york
 } from './constants';
 
 export default [{
@@ -8,7 +9,7 @@ export default [{
     year: '90',
     keywords: [],
     star: [tim],
-    location: ['orleans'],
+    location: [nO],
     url: `${assetsPath}/90/tim-birthday-90.mp4`,
     thumbnailUrl: `${assetsPath}/90/thumbnails/tim-birthday-90.jpg`,
 }, {
@@ -16,7 +17,7 @@ export default [{
     year: '90',
     keywords: [],
     star: [tim],
-    location: ['orleans'],
+    location: newman,
     url: `${assetsPath}/90/tim-costume-90.mp4`,
     thumbnailUrl: `${assetsPath}/90/thumbnails/tim-costume-90.jpg`,
 }, {
@@ -24,7 +25,7 @@ export default [{
     year: '90',
     keywords: [],
     star: kidsMom,
-    location: ['orleans', 'school'],
+    location: newman,
     url: `${assetsPath}/90/halloween-90.mp4`,
     thumbnailUrl: `${assetsPath}/90/thumbnails/halloween-90.jpg`,
 }, {
@@ -32,7 +33,7 @@ export default [{
     year: '90',
     keywords: [],
     star: kidsMom,
-    location: ['orleans', 'york'],
+    location: york,
     url: `${assetsPath}/90/christmas-90.mp4`,
     thumbnailUrl: `${assetsPath}/90/thumbnails/christmas-90.jpg`,
 }, {
@@ -40,7 +41,7 @@ export default [{
     year: '90',
     keywords: [],
     star: [brian],
-    location: ['orleans'],
+    location: [nO],
     url: `${assetsPath}/90/brian-basketball-90.mp4`,
     thumbnailUrl: `${assetsPath}/90/thumbnails/brian-basketball-90.jpg`,
 }, {
@@ -48,7 +49,7 @@ export default [{
     year: '90',
     keywords: [],
     star: [...kidsMom, celyna, megan],
-    location: ['arkansas'],
+    location: ark,
     url: `${assetsPath}/90/arkansas-playing-90.mp4`,
     thumbnailUrl: `${assetsPath}/90/thumbnails/arkansas-playing-90.jpg`,
 }, {
@@ -56,7 +57,7 @@ export default [{
     year: '90',
     keywords: [],
     star: [...kidsMom, ...corns],
-    location: ['arkansas'],
+    location: ark,
     url: `${assetsPath}/90/arkansas-christmas-90.mp4`,
     thumbnailUrl: `${assetsPath}/90/thumbnails/arkansas-christmas-90.jpg`,
 }, {
@@ -64,7 +65,7 @@ export default [{
     year: '91',
     keywords: [],
     star: kidsMom,
-    location: ['orleans', 'york'],
+    location: york,
     url: `${assetsPath}/91/tim-birthday-91.mp4`,
     thumbnailUrl: `${assetsPath}/91/thumbnails/tim-birthday-91.jpg`,
 }, {
@@ -72,7 +73,7 @@ export default [{
     year: '91',
     keywords: [],
     star: [emily, tim],
-    location: ['orleans'],
+    location: [nO],
     url: `${assetsPath}/91/emily-dance-91.mp4`,
     thumbnailUrl: `${assetsPath}/91/thumbnails/emily-dance-91.jpg`,
 }, {
@@ -80,7 +81,7 @@ export default [{
     year: '91',
     keywords: [],
     star: kidsMom,
-    location: ['orleans', 'york'],
+    location: york,
     url: `${assetsPath}/91/dancing-91.mp4`,
     thumbnailUrl: `${assetsPath}/91/thumbnails/dancing-91.jpg`,
 }, {
@@ -88,7 +89,7 @@ export default [{
     year: '91',
     keywords: [],
     star: [emily, celyna, tim, celeste, megan],
-    location: ['arkansas'],
+    location: ark,
     url: `${assetsPath}/91/cousins-91.mp4`,
     thumbnailUrl: `${assetsPath}/91/thumbnails/cousins-91.jpg`,
 }, {
@@ -96,7 +97,7 @@ export default [{
     year: '91',
     keywords: [],
     star: [brian],
-    location: ['orleans'],
+    location: [nO],
     url: `${assetsPath}/91/brian-play-91.mp4`,
     thumbnailUrl: `${assetsPath}/91/thumbnails/brian-play-91.jpg`,
 }, {
@@ -104,7 +105,7 @@ export default [{
     year: '91',
     keywords: [],
     star: [ray, ...mainKids],
-    location: ['york', 'orleans'],
+    location: york,
     url: `${assetsPath}/91/boxing-91.mp4`,
     thumbnailUrl: `${assetsPath}/91/thumbnails/boxing-91.jpg`,
 }, {
@@ -112,7 +113,7 @@ export default [{
     year: '91',
     keywords: [],
     star: allFam,
-    location: ['beach'],
+    location: beach,
     url: `${assetsPath}/91/beach-91.mp4`,
     thumbnailUrl: `${assetsPath}/91/thumbnails/beach-91.jpg`,
 }]

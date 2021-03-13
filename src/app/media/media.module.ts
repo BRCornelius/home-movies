@@ -12,12 +12,13 @@ import { YearOptionsComponent } from './components/year-options/year-options.com
 import { NameOptionsComponent } from './components/name-options/name-options.component';
 import { VideoCountComponent } from './components/video-count/video-count.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LocationOptionsComponent } from './components/location-options/location-options.component';
 
 @NgModule({
   declarations: [
     DisplayComponent, MediaCardComponent, MoviesPage,
     GridComponent, FilterComponent, FilterOptionsComponent,
-    YearOptionsComponent, NameOptionsComponent, VideoCountComponent, FooterComponent
+    YearOptionsComponent, NameOptionsComponent, VideoCountComponent, FooterComponent, LocationOptionsComponent
   ],
   imports: [
     CommonModule,

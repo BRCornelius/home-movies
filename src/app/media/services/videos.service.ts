@@ -50,6 +50,9 @@ export class VideosService {
         case 'star':
           goodVideos = this.filterVideosFromArray(key, selection);
           break;
+        case 'location':
+          goodVideos = this.filterVideosFromArray(key, selection);
+          break;
         default:
           goodVideos = allVideos;
       }
@@ -74,5 +77,20 @@ export class VideosService {
       }
     }
   }
-  updateFilteredVideosList: Function = (key) => this.filteredVideos = this.multiFilterVideos(key);
+  isItUnique = (array, object): boolean => {
+    array.forEach(item => {
+      console.log(item.name === object.name && item.year === object.year)
+      if(item.name === object.name && item.year === object.year) {
+        return false
+      }
+    })
+    return true
+  }
+  removeDuplicates = inputArray => inputArray.reduce((agg, curr) => {
+      if(this.isItUnique(agg, curr)){
+        agg.push(curr)
+      }
+      return agg;
+    }, []);
+  updateFilteredVideosList: Function = (key) => this.filteredVideos = this.removeDuplicates(this.multiFilterVideos(key));
 }

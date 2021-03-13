@@ -1,11 +1,11 @@
-import { assetsPath, brian, emily, mainKids, tim } from "./constants";
+import { assetsPath, brian, church, emily, mainKids, miro, newman, nO, tim } from "./constants";
 
 export default [{
     title: 'Tim Soccer',
     year: '96',
     keywords: [],
     star: [tim],
-    location: ['orleans'],
+    location: [nO],
     url: `${assetsPath}/96/tim-soccer-96.mp4`,
     thumbnailUrl: `${assetsPath}/96/thumbnails/tim-soccer-96.jpg`,
 }, {
@@ -13,7 +13,7 @@ export default [{
     year: '96',
     keywords: [],
     star: [tim],
-    location: ['orleans'],
+    location: [nO],
     url: `${assetsPath}/96/tim-soccer_2-96.mp4`,
     thumbnailUrl: `${assetsPath}/96/thumbnails/tim-soccer_2-96.jpg`,
 }, {
@@ -21,7 +21,7 @@ export default [{
     year: '96',
     keywords: [],
     star: [tim],
-    location: ['orleans'],
+    location: newman,
     url: `${assetsPath}/96/tim-play-96.mp4`,
     thumbnailUrl: `${assetsPath}/96/thumbnails/tim-play-96.jpg`,
 }, {
@@ -29,7 +29,7 @@ export default [{
     year: '96',
     keywords: [],
     star: [tim],
-    location: ['orleans'],
+    location: newman,
     url: `${assetsPath}/96/tim-class-96.mp4`,
     thumbnailUrl: `${assetsPath}/96/thumbnails/tim-class-96.jpg`,
 }, {
@@ -37,7 +37,7 @@ export default [{
     year: '96',
     keywords: [],
     star: [tim],
-    location: ['orleans'],
+    location: newman,
     url: `${assetsPath}/96/tim-class_party-96.mp4`,
     thumbnailUrl: `${assetsPath}/96/thumbnails/tim-class_party-96.jpg`,
 }, {
@@ -52,8 +52,8 @@ export default [{
     title: 'Mardi Gras',
     year: '96',
     keywords: [],
-    star: [],
-    location: mainKids,
+    star: mainKids,
+    location: [nO],
     url: `${assetsPath}/96/mardi_gras-96.mp4`,
     thumbnailUrl: `${assetsPath}/96/thumbnails/mardi_gras-96.jpg`,
 }, {
@@ -61,7 +61,7 @@ export default [{
     year: '96',
     keywords: [],
     star: [emily],
-    location: ['orleans'],
+    location: newman,
     url: `${assetsPath}/96/emily-slavery-96.mp4`,
     thumbnailUrl: `${assetsPath}/96/thumbnails/emily-slavery-96.jpg`,
 }, {
@@ -69,7 +69,7 @@ export default [{
     year: '96',
     keywords: [],
     star: [emily],
-    location: ['orleans'],
+    location: newman,
     url: `${assetsPath}/96/emily-skit-96.mp4`,
     thumbnailUrl: `${assetsPath}/96/thumbnails/emily-skit-96.jpg`,
 }, {
@@ -77,7 +77,7 @@ export default [{
     year: '96',
     keywords: [],
     star: [emily],
-    location: ['orleans'],
+    location: newman,
     url: `${assetsPath}/96/emily-play-96.mp4`,
     thumbnailUrl: `${assetsPath}/96/thumbnails/emily-play-96.jpg`,
 }, {
@@ -85,7 +85,7 @@ export default [{
     year: '96',
     keywords: [],
     star: [emily],
-    location: ['orleans'],
+    location: newman,
     url: `${assetsPath}/96/emily-play_2-96.mp4`,
     thumbnailUrl: `${assetsPath}/96/thumbnails/emily-play_2-96.jpg`,
 }, {
@@ -93,7 +93,7 @@ export default [{
     year: '96',
     keywords: [],
     star: mainKids,
-    location: ['orleans'],
+    location: church,
     url: `${assetsPath}/96/church_play-96.mp4`,
     thumbnailUrl: `${assetsPath}/96/thumbnails/church_play-96.jpg`,
 }, {
@@ -101,7 +101,7 @@ export default [{
     year: '96',
     keywords: [],
     star: mainKids,
-    location: ['orleans', 'miro'],
+    location: miro,
     url: `${assetsPath}/96/christmas_eve-96.mp4`,
     thumbnailUrl: `${assetsPath}/96/thumbnails/christmas_eve-96.jpg`,
 }, {
@@ -109,7 +109,7 @@ export default [{
     year: '96',
     keywords: [],
     star: mainKids,
-    location: ['orleans', 'miro'],
+    location: miro,
     url: `${assetsPath}/96/christmas_day-96.mp4`,
     thumbnailUrl: `${assetsPath}/96/thumbnails/christmas_day-96.jpg`,
 }, {
@@ -117,7 +117,7 @@ export default [{
     year: '96',
     keywords: [],
     star: [brian],
-    location: ['orleans'],
+    location: newman,
     url: `${assetsPath}/96/brian-football-96.mp4`,
     thumbnailUrl: `${assetsPath}/96/thumbnails/brian-football-96.jpg`,
 }, {
@@ -125,7 +125,7 @@ export default [{
     year: '96',
     keywords: [],
     star: [tim, emily],
-    location: ['orleans', 'miro'],
+    location: miro,
     url: `${assetsPath}/96/beaux-96.mp4`,
     thumbnailUrl: `${assetsPath}/96/thumbnails/beaux-96.jpg`,
 }]

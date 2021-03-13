@@ -6,9 +6,10 @@
   <label for="filter">Filter By: </label>
   <select class="form-control" name="filter" id="filter" (change)="updateOption($event)">
     <option value="year">Year</option>
-    <!-- <option value="location">Location</option> -->
+    <option value="location">Location</option>
     <option value="star">Star</option>
   </select>
 </div>
 <year-options *ngIf="option === 'year'"></year-options>
 <name-options *ngIf="option === 'star'"></name-options>
+<location-options *ngIf="option === 'location'"></location-options>

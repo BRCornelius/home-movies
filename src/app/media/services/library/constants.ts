@@ -1,4 +1,5 @@
 export const assetsPath = 'https://assets.corneliuses.com/videos/family/Home-movies';
+
 export const brian = "brian";
 export const ray = "ray";
 export const gloria = "gloria";
@@ -24,3 +25,12 @@ export const brums = [...brumsAuntsCousins, jane];
 export const brumsWithFam = [...brumsAuntsCousins, ...kidsMom];
 export const cornsAuntsCousins = [glenda, berta, gary, garrett];
 export const corns = [...cornsAuntsCousins, jean]
+
+export const nO = 'orleans';
+export const ark = ['arkansas'];
+export const newman = [nO, 'newman'];
+export const york = [nO, 'york'];
+export const miro = [nO, 'miro'];
+export const church = [nO, 'church'];
+export const beach = ['beach'];
+export const disney = ['disney'];

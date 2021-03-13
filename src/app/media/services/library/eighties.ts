@@ -1,12 +1,16 @@
 import {
     allFam,
+    ark,
     assetsPath,
     brums,
     brumsAuntsCousins,
     celyna,
     corns,
+    disney,
     jean,
-    kidsMom
+    kidsMom,
+    nO,
+    york
 } from './constants';
 
 export default [{
@@ -14,7 +18,7 @@ export default [{
     year: '87',
     keywords: [],
     star: kidsMom,
-    location: ['disney'],
+    location: disney,
     url: `${assetsPath}/87/disney-87.mp4`,
     thumbnailUrl: `${assetsPath}/87/thumbnails/disney-87.jpg`,
 }, {
@@ -22,7 +26,7 @@ export default [{
     year: '87',
     keywords: [],
     star: kidsMom,
-    location: ['orleans'],
+    location: [nO],
     url: `${assetsPath}/87/emily-birth-87.mp4`,
     thumbnailUrl: `${assetsPath}/87/thumbnails/emily-birth-87.jpg`,
 }, {
@@ -30,7 +34,7 @@ export default [{
     year: '89',
     keywords: [],
     star: [...kidsMom, ...corns, ...brums],
-    location: ['arkansas'],
+    location: ark,
     url: `${assetsPath}/89/arkansas-christmas-89.mp4`,
     thumbnailUrl: `${assetsPath}/89/thumbnails/arkansas-christmas-89.jpg`,
 }, {
@@ -38,7 +42,7 @@ export default [{
     year: '89',
     keywords: [],
     star: [...allFam, ...corns, celyna],
-    location: ['arkansas'],
+    location: ark,
     url: `${assetsPath}/89/arkansas-sled-89.mp4`,
     thumbnailUrl: `${assetsPath}/89/thumbnails/arkansas-sled-89.jpg`,
 }, {
@@ -46,7 +50,7 @@ export default [{
     year: '89',
     keywords: [],
     star: [...allFam, ...brumsAuntsCousins, jean],
-    location: ['arkansas', 'orleans'],
+    location: [...ark, nO],
     url: `${assetsPath}/89/brian-birthday-89.mp4`,
     thumbnailUrl: `${assetsPath}/89/thumbnails/brian-birthday-89.jpg`,
 }, {
@@ -54,7 +58,7 @@ export default [{
     year: '89',
     keywords: [],
     star: kidsMom,
-    location: ['orleans'],
+    location: york,
     url: `${assetsPath}/89/christmas-89.mp4`,
     thumbnailUrl: `${assetsPath}/89/thumbnails/christmas-89.jpg`,
 }, {
@@ -62,7 +66,7 @@ export default [{
     year: '89',
     keywords: [],
     star: kidsMom,
-    location: ['orleans'],
+    location: york,
     url: `${assetsPath}/89/emily-birthday-89.mp4`,
     thumbnailUrl: `${assetsPath}/89/thumbnails/emily-birthday-89.jpg`,
 }, {
@@ -70,7 +74,7 @@ export default [{
     year: '89',
     keywords: [],
     star: kidsMom,
-    location: ['arkansas', 'orleans'],
+    location: [...ark, nO],
     url: `${assetsPath}/89/fall-89.mp4`,
     thumbnailUrl: `${assetsPath}/89/thumbnails/fall-89.jpg`,
 }];
