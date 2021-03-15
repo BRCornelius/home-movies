@@ -78,12 +78,12 @@ export class VideosService {
     }
   }
   isItUnique = (array, object): boolean => {
-    array.forEach(item => {
-      console.log(item.name === object.name && item.year === object.year)
-      if(item.name === object.name && item.year === object.year) {
+    for(let i = 0; i < array.length; i++) {
+      const item = array[i];
+      if(item.title === object.title && item.year === object.year) {
         return false
       }
-    })
+    }
     return true
   }
   removeDuplicates = inputArray => inputArray.reduce((agg, curr) => {
