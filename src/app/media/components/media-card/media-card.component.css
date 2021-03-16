@@ -2,12 +2,6 @@ img {
     height: 92.11px;
     width: 93.75px;
 }
-@media only screen and (min-width: 768px) {
-    img {
-        height: 178.33px;
-        width: 190.5px;
-    }
-}
 h3 {
     margin-left: 0.25rem;
 }
@@ -19,4 +13,24 @@ h3 {
     justify-content: flex-start;
     margin: 0.25rem 0;
     width: 100%;
+}
+.year-badge {
+    background-color: darkviolet;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    left: 4.5rem;
+    margin-top: -4.5rem;
+    padding: 0.5rem 0.25rem;
+    width: fit-content;
+}
+@media only screen and (min-width: 768px) {
+    img {
+        height: 178.33px;
+        width: 190.5px;
+    }
+    .year-badge {
+        left: 10.5rem;
+        margin-top: -6rem;
+    }
 }

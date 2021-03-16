@@ -1,4 +1,9 @@
 <div class="container">
     <img *ngIf="thumbnailUrl" src={{thumbnailUrl}} />
-    <h3>{{title}}</h3>
+    <div class="details-container">
+        <h3>{{title}}</h3>
+        <div class="year-badge">
+            {{displayYear}}
+        </div>
+    </div>
 </div>
