@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { VideosService } from '../../services';
 
 @Component({
@@ -9,6 +9,14 @@ import { VideosService } from '../../services';
 export class FilterOptionsComponent {
 
   constructor(public vids: VideosService) { }
+
+  @Input() clickFunction: Function;
+
+  selectAndClose: Function = (): void => {
+    this.vids.updateFilteredVideosList(this.option);
+    this.clickFunction();
+  }
+
   option = 'year';
   updateOption: Function = $event => this.option = $event.target.value;
 }

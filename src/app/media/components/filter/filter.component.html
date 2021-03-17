@@ -3,7 +3,10 @@
     <h3>{{buttonText}}</h3>
   </div>
   <div *ngIf="open" class="filter-tray">
-    <ng-content></ng-content>
+    <ng-container *ngTemplateOutlet="filterOptionsTemplate"></ng-container>
   </div>
 </div>
 <video-count *ngIf="!open"></video-count>
+<ng-template #filterOptionsTemplate>
+  <app-filter-options [clickFunction]="clickFunction"></app-filter-options>
+</ng-template>
