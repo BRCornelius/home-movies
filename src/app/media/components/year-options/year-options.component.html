@@ -3,89 +3,75 @@
   <h2>Year</h2>
 </div>
 <hr>
-<mat-grid-list cols="4" rowHeight="3:1">
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('year', 'unknown')"/>
+<mat-grid-list cols="4" rowHeight="3:1" gutterSize="6">
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.year.includes('unknown'), 'option-unselected': !vids.filterCriteria.year.includes('unknown')}"
+    (click)="vids.updateFilterCriteria('year', 'unknown')" >
     <h3>??</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('year', '56')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.year.includes('56'), 'option-unselected': !vids.filterCriteria.year.includes('56')}"
+    (click)="vids.updateFilterCriteria('year', '56')">
     <h3>56</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('year', '57')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.year.includes('57'), 'option-unselected': !vids.filterCriteria.year.includes('57')}"
+    (click)="vids.updateFilterCriteria('year', '57')">
     <h3>57</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('year', '58')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.year.includes('58'), 'option-unselected': !vids.filterCriteria.year.includes('58')}"
+    (click)="vids.updateFilterCriteria('year', '58')">
     <h3>58</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('year', '59')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.year.includes('59'), 'option-unselected': !vids.filterCriteria.year.includes('59')}"
+    (click)="vids.updateFilterCriteria('year', '59')">
     <h3>59</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('year', '87')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.year.includes('87'), 'option-unselected': !vids.filterCriteria.year.includes('87')}"
+    (click)="vids.updateFilterCriteria('year', '87')">
     <h3>87</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('year', '89')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.year.includes('89'), 'option-unselected': !vids.filterCriteria.year.includes('89')}"
+    (click)="vids.updateFilterCriteria('year', '89')">
     <h3>89</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('year', '90')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.year.includes('90'), 'option-unselected': !vids.filterCriteria.year.includes('90')}"
+    (click)="vids.updateFilterCriteria('year', '90')">
     <h3>90</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('year', '91')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.year.includes('91'), 'option-unselected': !vids.filterCriteria.year.includes('91')}"
+    (click)="vids.updateFilterCriteria('year', '91')">
     <h3>91</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('year', '92')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.year.includes('92'), 'option-unselected': !vids.filterCriteria.year.includes('92')}"
+    (click)="vids.updateFilterCriteria('year', '92')">
     <h3>92</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('year', '93')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.year.includes('93'), 'option-unselected': !vids.filterCriteria.year.includes('93')}"
+    (click)="vids.updateFilterCriteria('year', '93')">
     <h3>93</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('year', '94')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.year.includes('94'), 'option-unselected': !vids.filterCriteria.year.includes('94')}"
+    (click)="vids.updateFilterCriteria('year', '94')">
     <h3>94</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('year', '95')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.year.includes('95'), 'option-unselected': !vids.filterCriteria.year.includes('95')}"
+    (click)="vids.updateFilterCriteria('year', '95')">
     <h3>95</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('year', '96')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.year.includes('96'), 'option-unselected': !vids.filterCriteria.year.includes('96')}"
+    (click)="vids.updateFilterCriteria('year', '96')">
     <h3>96</h3>
   </mat-grid-tile>
 </mat-grid-list>
