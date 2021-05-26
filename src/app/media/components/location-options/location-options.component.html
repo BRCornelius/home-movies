@@ -3,65 +3,55 @@
   <h2>Location</h2>
 </div>
 <hr>
-<mat-grid-list cols="3" rowHeight="2:1">
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('location', 'arkansas')"/>
+<mat-grid-list cols="3" rowHeight="2:1" gutterSize="6">
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.location.includes('arkansas'), 'option-unselected': !vids.filterCriteria.location.includes('arkansas')}"
+    (click)="vids.updateFilterCriteria('location', 'arkansas')">
     <h3>Arkansas</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('location', 'orleans')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.location.includes('orleans'), 'option-unselected': !vids.filterCriteria.location.includes('orleans')}"
+    (click)="vids.updateFilterCriteria('location', 'orleans')">
     <h3>New Orleans</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('location', 'beach')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.location.includes('beach'), 'option-unselected': !vids.filterCriteria.location.includes('beach')}"
+    (click)="vids.updateFilterCriteria('location', 'beach')">
     <h3>Beach</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('location', 'disney')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.location.includes('disney'), 'option-unselected': !vids.filterCriteria.location.includes('disney')}"
+    (click)="vids.updateFilterCriteria('location', 'disney')">
     <h3>Disney</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('location', 'york')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.location.includes('york'), 'option-unselected': !vids.filterCriteria.location.includes('york')}"
+    (click)="vids.updateFilterCriteria('location', 'york')">
     <h3>York st.</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('location', 'miro')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.location.includes('miro'), 'option-unselected': !vids.filterCriteria.location.includes('miro')}"
+    (click)="vids.updateFilterCriteria('location', 'miro')">
     <h3>S Miro</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('location', 'church')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.location.includes('church'), 'option-unselected': !vids.filterCriteria.location.includes('church')}"
+    (click)="vids.updateFilterCriteria('location', 'church')">
     <h3>Church</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('location', 'colorado')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.location.includes('colorado'), 'option-unselected': !vids.filterCriteria.location.includes('colorado')}"
+    (click)="vids.updateFilterCriteria('location', 'colorado')">
     <h3>Colorado</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('location', 'guam')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.location.includes('guam'), 'option-unselected': !vids.filterCriteria.location.includes('guam')}"
+    (click)="vids.updateFilterCriteria('location', 'guam')">
     <h3>Guam</h3>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('location', 'newman')"/>
+  <mat-grid-tile
+    [ngClass]="{'option-selected': vids.filterCriteria.location.includes('newman'), 'option-unselected': !vids.filterCriteria.location.includes('newman')}"
+    (click)="vids.updateFilterCriteria('location', 'newman')">
     <h3>Newman</h3>
   </mat-grid-tile>
 </mat-grid-list>
