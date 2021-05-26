@@ -3,101 +3,85 @@
   <h2>Name</h2>
 </div>
 <hr>
-<mat-grid-list cols="3" rowHeight="3:1">
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('star', 'ray')"/>
+<mat-grid-list cols="3" rowHeight="3:1" gutterSize="6">
+  <mat-grid-tile
+  [ngClass]="{'option-selected': vids.filterCriteria.star.includes('ray'), 'option-unselected': !vids.filterCriteria.star.includes('ray')}"
+  (click)="vids.updateFilterCriteria('star', 'ray')">
     <p>Ray</p>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('star', 'gloria')"/>
+  <mat-grid-tile
+  [ngClass]="{'option-selected': vids.filterCriteria.star.includes('gloria'), 'option-unselected': !vids.filterCriteria.star.includes('gloria')}"
+  (click)="vids.updateFilterCriteria('star', 'gloria')">
     <p>Gloria</p>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('star', 'celyna')"/>
+  <mat-grid-tile
+  [ngClass]="{'option-selected': vids.filterCriteria.star.includes('celyna'), 'option-unselected': !vids.filterCriteria.star.includes('celyna')}"
+  (click)="vids.updateFilterCriteria('star', 'celyna')">
     <p>Celyna</p>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('star', 'brian')"/>
+  <mat-grid-tile
+  [ngClass]="{'option-selected': vids.filterCriteria.star.includes('brian'), 'option-unselected': !vids.filterCriteria.star.includes('brian')}"
+  (click)="vids.updateFilterCriteria('star', 'brian')">
     <p>Brian</p>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('star', 'emily')"/>
+  <mat-grid-tile
+  [ngClass]="{'option-selected': vids.filterCriteria.star.includes('emily'), 'option-unselected': !vids.filterCriteria.star.includes('emily')}"
+  (click)="vids.updateFilterCriteria('star', 'emily')">
     <p>Emily</p>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('star', 'tim')"/>
+  <mat-grid-tile
+  [ngClass]="{'option-selected': vids.filterCriteria.star.includes('tim'), 'option-unselected': !vids.filterCriteria.star.includes('tim')}"
+  (click)="vids.updateFilterCriteria('star', 'tim')">
     <p>Tim</p>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('star', 'garrett')"/>
+  <mat-grid-tile
+  [ngClass]="{'option-selected': vids.filterCriteria.star.includes('garrett'), 'option-unselected': !vids.filterCriteria.star.includes('garrett')}"
+  (click)="vids.updateFilterCriteria('star', 'garrett')">
     <p>Garrett</p>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('star', 'gary')"/>
+  <mat-grid-tile
+  [ngClass]="{'option-selected': vids.filterCriteria.star.includes('gary'), 'option-unselected': !vids.filterCriteria.star.includes('gary')}"
+  (click)="vids.updateFilterCriteria('star', 'gary')">
     <p>Gary</p>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('star', 'glenda')"/>
+  <mat-grid-tile
+  [ngClass]="{'option-selected': vids.filterCriteria.star.includes('glenda'), 'option-unselected': !vids.filterCriteria.star.includes('glenda')}"
+  (click)="vids.updateFilterCriteria('star', 'glenda')">
     <p>Glenda</p>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('star', 'berta')"/>
+  <mat-grid-tile
+  [ngClass]="{'option-selected': vids.filterCriteria.star.includes('berta'), 'option-unselected': !vids.filterCriteria.star.includes('berta')}"
+  (click)="vids.updateFilterCriteria('star', 'berta')">
     <p>Berta</p>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('star', 'celeste')"/>
+  <mat-grid-tile
+  [ngClass]="{'option-selected': vids.filterCriteria.star.includes('celeste'), 'option-unselected': !vids.filterCriteria.star.includes('celeste')}"
+  (click)="vids.updateFilterCriteria('star', 'celeste')">
     <p>Celeste</p>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('star', 'jean')"/>
+  <mat-grid-tile
+  [ngClass]="{'option-selected': vids.filterCriteria.star.includes('jean'), 'option-unselected': !vids.filterCriteria.star.includes('jean')}"
+  (click)="vids.updateFilterCriteria('star', 'jean')">
     <p>Meme Jean</p>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('star', 'jane')"/>
+  <mat-grid-tile
+  [ngClass]="{'option-selected': vids.filterCriteria.star.includes('jane'), 'option-unselected': !vids.filterCriteria.star.includes('jane')}"
+  (click)="vids.updateFilterCriteria('star', 'jane')">
     <p>Nana Jane</p>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('star', 'clarice')"/>
+  <mat-grid-tile
+  [ngClass]="{'option-selected': vids.filterCriteria.star.includes('clarice'), 'option-unselected': !vids.filterCriteria.star.includes('clarice')}"
+  (click)="vids.updateFilterCriteria('star', 'clarice')">
     <p>Clarice</p>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('star', 'molly')"/>
+  <mat-grid-tile
+  [ngClass]="{'option-selected': vids.filterCriteria.star.includes('molly'), 'option-unselected': !vids.filterCriteria.star.includes('molly')}"
+  (click)="vids.updateFilterCriteria('star', 'molly')">
     <p>Molly</p>
   </mat-grid-tile>
-  <mat-grid-tile class="option-container">
-    <input
-      type="checkbox"
-      (click)="vids.updateFilterCriteria('star', 'megan')"/>
+  <mat-grid-tile
+  [ngClass]="{'option-selected': vids.filterCriteria.star.includes('megan'), 'option-unselected': !vids.filterCriteria.star.includes('megan')}"
+  (click)="vids.updateFilterCriteria('star', 'megan')">
     <p>Megan</p>
   </mat-grid-tile>
   <!-- <mat-grid-tile class="option-container">
